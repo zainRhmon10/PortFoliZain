@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#7B6FFF"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B6FFF"/>
+      <stop offset="100%" stop-color="#FF6B35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- دايرة أكبر -->
+  <circle cx="64" cy="64" r="63" fill="#0D0D0F"/>
+  <circle cx="64" cy="64" r="61" fill="none" stroke="#00F5D4" stroke-width="1.5" stroke-dasharray="80 285" opacity="0.7"/>
+  <circle cx="64" cy="64" r="61" fill="none" stroke="#7B6FFF" stroke-width="1.5" stroke-dasharray="70 295" stroke-dashoffset="-90" opacity="0.7"/>
+  <circle cx="64" cy="64" r="61" fill="none" stroke="#FF6B35" stroke-width="1.5" stroke-dasharray="50 315" stroke-dashoffset="-170" opacity="0.6"/>
+
+  <!-- هيكساغون -->
+  <polygon points="64,18 102,40 102,88 64,110 26,88 26,40" fill="none" stroke="#00F5D4" stroke-width="1" opacity="0.2"/>
+
+  <!-- Z أكبر وأوضح -->
+  <path d="M20 32 L62 32 L20 96 L63 96" 
+        fill="none" stroke="url(#g1)" stroke-width="10" 
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- R أكبر وأوضح -->
+  <path d="M72 32 L72 96" 
+        fill="none" stroke="url(#g2)" stroke-width="10" 
+        stroke-linecap="round"/>
+  <path d="M72 32 Q105 32 105 54 Q105 76 72 76" 
+        fill="none" stroke="url(#g2)" stroke-width="10" 
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M72 76 L105 96" 
+        fill="none" stroke="url(#g2)" stroke-width="10" 
+        stroke-linecap="round"/>
+
+  <!-- نقاط الزوايا -->
+  <circle cx="26" cy="40" r="3" fill="#00F5D4"/>
+  <circle cx="102" cy="40" r="3" fill="#7B6FFF"/>
+  <circle cx="26" cy="88" r="3" fill="#7B6FFF"/>
+  <circle cx="102" cy="88" r="3" fill="#FF6B35"/>
+</svg>
