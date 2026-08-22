@@ -25,25 +25,25 @@ function NavBar() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm z-50 border-b border-border">
       <nav
-        className={`max-w-[1500px] mx-auto px-4 transition-all duration-300 ${
-          scrolled ? "py-5" : "py-8"
+        className={`max-w-[1200px] mx-auto px-4 transition-all duration-300 ${
+          scrolled ? "py-3" : "py-6"
         }`}
       >
         <div className="flex items-center justify-between">
           <a
             href="#"
-            className="text-4xl bg-gradient-to-r from-accent-teal to-accent-purple bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-accent-teal to-accent-purple bg-clip-text text-transparent"
           >
             ZR
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-15 ">
+          <div className="hidden md:flex items-center gap-9 ">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-300  hover:text-white transition-colors text-xl relative group"
+                className="text-gray-300  hover:text-white transition-colors text-lg relative group"
               >
                 {item.label}
                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-accent-teal to-accent-purple transition-all duration-300 group-hover:w-full"></span>

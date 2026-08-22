@@ -20,3 +20,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes bounce-arrow {
+  0%, 100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, 8px);
+    opacity: 0.3;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
